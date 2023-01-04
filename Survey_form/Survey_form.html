@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charaset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/Survey_form.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill this survey form.</p>
+    <form action="none" id="survey-form">
+      <label id="name-label">Enter Your Name: <input placeholder="Enter Your Name" required type="text" id="name"/></label>
+      <label id="email-label">Enter Your Email: <input placeholder="Enter Your Email" required type="email" id="email"/></label>
+      <label id="number-label">Enter Your Age: <input placeholder="Age" required type="number" id="number" min="13" max="80"/></label>
+      <label>For what you use laptop most?
+        <select id="dropdown">
+          <option>Gamming</option>
+          <option>Educaion</option>
+          <option>Personal</option>
+          <option>Professional</option>
+        </select>
+      </label>
+      <label>What's your gender:
+        <label><input name="radio" type="radio" value="male"
+        />Male</label>
+        <label><input name="radio" type="radio" value="female" />Female</label>
+        <label><input name="radio" type="radio" value="other" />Other</label>
+      </label>
+      <label>Which of the following sites you use for your social life
+        <label><input value="instagram" type="checkbox" />Instagram</label>
+        <label><input value="facebook" type="checkbox" />Facebook</label>
+        <label><input value="twitter" type="checkbox" />Twitter</label>
+      </label>
+      <label>Any recommendation?<textarea placeholder="Write your recommendaion here."></textarea></label>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
