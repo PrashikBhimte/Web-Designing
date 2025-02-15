@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    margin-left: 100px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+a {
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#first_link {
+    font-weight: bold;
+}
+
+#first_button {
+    margin-left: 50vw;
+    padding: 12px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.button {
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.button:hover {
+    color: black;
+    padding: 12px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.width50 {
+    width: 50vw;
+    padding: 50px;
+}
+
+.intro_text {
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+#intro_img {
+    width: 600px;
+    height: 300px;
+}
+
+.intro_bottom {
+    margin: 50px 30px;
+    margin-bottom: 0;
+}
+
+.h {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#profile_img {
+    width: 300px;
+    margin-top: -50px;
+    margin-left: 350px;
+}
+
+#frontend_img {
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 350px;
+}
+
+#p_img {
+    width: 300px;
+    margin-top: -50px;
+}
+
+#c_img {
+    width: 300px;
+    margin-top: -50px;
+    margin-left: 350px;
+}
+
+#gallery {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 80px;
+    gap: 25px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    margin-bottom: 100px;
+}
+
+#gallery .web {
+    flex: 0 0 30%;
+    padding: 0px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    border: 2px solid blue;
+    box-shadow: 0.7vw 0.7vw 1vw 0.4vw blue;
+}
+
+.web_img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text_head {
+    margin: 0 350px;
+}
+
+.text_h {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.text_p {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#text_button {
+    margin-left: -300px;
+}
+
+.footer {
+    margin: 100px 22vw;
+}
+
+.right_text {
+    text-align: right;
+}

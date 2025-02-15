@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-size: 100px;
+    color: rgb(68, 244, 45);
+    border-right: 5px solid rgb(68, 244, 45);
+    animation: load 5s linear infinite;
+    overflow: hidden;
+}
+.load{
+    color: transparent;
+}
+@keyframes load {
+    0%, 90%, 100%{
+        width: 0px;
+    }
+    70%{
+        width: 450px;
+    }
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+html{
+    background-color: rgb(171, 171, 171);
+}
+
+body{
+    margin: 25px auto;
+    width: 80vw;
+    background-color: #081736;
+    text-align: left;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 25px;
+    max-width: 100%;
+    margin: 0 0;
+    padding: 20px 10px;
+    padding: 2rem 0;
+}
+
+legend{
+    color: rgb(45, 186, 9);
+    margin-left: 20px;
+}
+
+fieldset::after {
+    content: "";
+    width: 350px;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 2px;
+    min-width: 2px;
+    margin: 0 0;
+    padding: 1px 2px;
+    border: none;
+    padding: 0 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+.inline{
+    width: 50px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    border-bottom: 5px solid rgb(90, 92, 91);
+}
+
+form{
+    margin: 0 auto;
+    width: 80%;
+    padding: 5vw;
+    font-size: 30px;
+}
+  
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input, textarea, select{
+    margin: 10px 0 0 0;
+    width: 250px;
+    min-height: 2em;
+    background-color: #dbdbdf;
+    border: 1px solid #3b3b3b;
+    color: #2c2b2b;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: rgb(92, 255, 89);
+}
+
+::placeholder{
+    color: #3b3b3b;
+}
+
+#fieldset1{
+    display: none;
+}
+
+#fieldset2{
+    display: none;
+}
+ 
+.button{
+    padding: 0;
+    border-radius: 5vw;
+    background-color: rgb(185, 183, 183);
+    width: 150px;
+    height: 50px;
+    color: black;
+    box-shadow: 0.5vw 0.5vw 1vw 0.1vw rgb(82, 80, 80);
+}
+
+#button_center{
+    text-align: center;
+}
+
+.button:hover{
+    box-shadow: 1vw 1vw 1vw 0.1vw rgb(82, 80, 80);
+    scale: 1.2;
+}
+
+a{
+    color: rgb(0, 119, 255);
+}
+
+.T_C p{
+    margin: 0;
+}
+
+@media screen and (max-width: 620px){
+
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post" enctype="text/plain" id="form">
+        <fieldset>
+            <legend>Team Details</legend>
+            <label id="name-label">
+                Team Name: 
+                <input placeholder="Enter Your Team Name" required type="text"/>
+            </label>
+            <label id="number-label">
+                Numbers of members in a team: 
+                <select id="value" onchange="no_of_members(this.value)">
+                    <option value="2">Choose no of members</option>
+                    <option value="2">2 Members</option>
+                    <option value="3">3 Members</option>
+                    <option value="4">4 Members</option>
+                </select>
+            </label>
+            <fieldset class="check">
+                <legend>Game/Games to be registrater</legend>
+                    <label><input class="inline" value="Retrofeista" type="checkbox" />Retrofeista</label>
+                    <label><input class="inline" value="Nijia_Clash" type="checkbox" />Nijia Clash</label>
+                    <label><input class="inline" value="Pac_Runner" type="checkbox" />Pac Runner</label>
+            </fieldset>
+            <fieldset class="check">
+                <legend>Do Your Team wish to attened workshop:</legend>
+                    <label><input class="inline" name="radiom" type="radio" value="yes"/>Yes</label>
+                    <label><input class="inline" name="radiom" type="radio" value="no" />No</label>
+            </fieldset>
+        </fieldset>
+
+
+        <fieldset class="fieldset">
+            <legend>Enter the details of Team Leader</legend>
+            <label id="name-label">
+                Name: 
+                <input placeholder="Name" required type="text"/>
+            </label>
+            <label id="number-label">
+                Contact number: 
+                <input placeholder="Contact Number" required type="number" min="1000000000" max="9999999999"/>
+            </label>
+            <label id="email-label">
+                Email: 
+                <input placeholder="Email" required type="email"/>
+            </label>
+            <label id="Rno-label">
+                Registration number: 
+                <input placeholder="Registration number" required type="text"/>
+            </label>
+            <label>Branch:
+                <select required id="dropdown">
+                    <option value="none">Choose your Branch</option>
+                    <option value="cse">Computer Science And Engineering</option>
+                    <option value="che">Chemical Engineering</option>
+                    <option value="cie">Civil Engineering</option>
+                    <option value="ete">Electronics And Telecommunication Engineering</option>
+                    <option value="ele">Electrical Engineering</option>
+                    <option value="int">Information Technology</option>
+                    <option value="ine">Instrumentation Engineering</option>
+                    <option value="mee">Mechanical Engineering</option>
+                    <option value="tet">Textile Technology</option>
+                    <option value="pre">Producation Engineering</option>
+                </select>
+            </label>
+            <label>Year:
+                <select required id="dropdown">
+                    <option value="none">Choose your year</option>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="final">Final Year</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter the details of second team member</legend>
+            <label id="name-label">
+                Name: 
+                <input required placeholder="Name" type="text" />
+            </label>
+            <label id="number-label">
+                Contact number: 
+                <input required placeholder="Contact Number" type="number" min="1000000000" max="9999999999"/>
+            </label>
+            <label id="email-label">
+                Email: 
+                <input required placeholder="Email" type="email"/>
+            </label>
+            <label id="Rno-label">
+                Registration number: 
+                <input required placeholder="Registration number" type="text" />
+            </label>
+            <label>Branch:
+                <select required id="dropdown">
+                    <option value="none">Choose your Branch</option>
+                    <option value="cse">Computer Science And Engineering</option>
+                    <option value="che">Chemical Engineering</option>
+                    <option value="cie">Civil Engineering</option>
+                    <option value="ete">Electronics And Telecommunication Engineering</option>
+                    <option value="ele">Electrical Engineering</option>
+                    <option value="int">Information Technology</option>
+                    <option value="ine">Instrumentation Engineering</option>
+                    <option value="mee">Mechanical Engineering</option>
+                    <option value="tet">Textile Technology</option>
+                    <option value="pre">Producation Engineering</option>
+                </select>
+            </label>
+            <label>Year:
+                <select required id="dropdown">
+                    <option value="none">Choose your year</option>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="final">Final Year</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset id="fieldset1">
+            <legend>Enter the details of third team member</legend>
+            <label id="name-label">
+                Name: 
+                <input placeholder="Name" type="text"/>
+            </label>
+            <label id="number-label">
+                Contact number: 
+                <input placeholder="Contact Number" type="number" min="1000000000" max="9999999999"/>
+            </label>
+            <label id="email-label">
+                Email: 
+                <input placeholder="Email" type="email"/>
+            </label>
+            <label id="Rno-label">
+                Registration number: 
+                <input placeholder="Registration number" type="text"/>
+            </label>
+            <label>Branch:
+                <select id="dropdown">
+                    <option value="none">Choose your Branch</option>
+                    <option value="cse">Computer Science And Engineering</option>
+                    <option value="che">Chemical Engineering</option>
+                    <option value="cie">Civil Engineering</option>
+                    <option value="ete">Electronics And Telecommunication Engineering</option>
+                    <option value="ele">Electrical Engineering</option>
+                    <option value="int">Information Technology</option>
+                    <option value="ine">Instrumentation Engineering</option>
+                    <option value="mee">Mechanical Engineering</option>
+                    <option value="tet">Textile Technology</option>
+                    <option value="pre">Producation Engineering</option>
+                </select>
+            </label>
+            <label>Year:
+                <select id="dropdown">
+                    <option value="none">Choose your year</option>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="final">Final Year</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset id="fieldset2">
+            <legend>Enter the details of fourth team member</legend>
+            <label id="name-label">
+                Name: 
+                <input placeholder="Name" type="text"/>
+            </label>
+            <label id="number-label">
+                Contact number: 
+                <input placeholder="Contact Number" type="number" min="1000000000" max="9999999999"/>
+            </label>
+            <label id="email-label">
+                Email: 
+                <input placeholder="Email" type="email"/>
+            </label>
+            <label id="Rno-label">
+                Registration number: 
+                <input placeholder="Registration number" type="text"/>
+            </label>
+            <label>Branch:
+                <select id="dropdown">
+                    <option value="none">Choose your Branch</option>
+                    <option value="cse">Computer Science And Engineering</option>
+                    <option value="che">Chemical Engineering</option>
+                    <option value="cie">Civil Engineering</option>
+                    <option value="ete">Electronics And Telecommunication Engineering</option>
+                    <option value="ele">Electrical Engineering</option>
+                    <option value="int">Information Technology</option>
+                    <option value="ine">Instrumentation Engineering</option>
+                    <option value="mee">Mechanical Engineering</option>
+                    <option value="tet">Textile Technology</option>
+                    <option value="pre">Producation Engineering</option>
+                </select>
+            </label>
+            <label>Year:
+                <select id="dropdown">
+                    <option value="none">Choose your year</option>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="final">Final Year</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset class="T_C">
+            <legend>Do you agree</legend>
+            <P><a href="https://www.rnxg.co.in/Privicy">Privacy</a> and</P>
+            <p><a href="https://www.rnxg.co.in/Terms">Terms and Condittion</a></p>
+            <label><input class="inline" required name="checkbox" type="checkbox" value="male"/>Yes, I do agree</label>
+        </fieldset>
+        
+        <div id="button_center">
+            <input type="submit" value="Send" class="button">
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function no_of_members(values){
+            if(values==3){
+                document.getElementById("fieldset1").style.display = "flex";
+                document.getElementById("fieldset2").style.display = "none";
+            }
+            else if(values==4){
+                document.getElementById("fieldset1").style.display = "flex";
+                document.getElementById("fieldset2").style.display = "flex";
+            }
+            else if(values==2){
+                document.getElementById("fieldset1").style.display = "none";
+                document.getElementById("fieldset2").style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

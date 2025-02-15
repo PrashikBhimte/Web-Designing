@@ -1,0 +1,43 @@
+.ball{
+    width: 100px;
+    height: 100px;
+    transform: translate(50%, 50%);
+    animation: ball 2s linear infinite;
+}
+
+@keyframes ball {
+    0%{
+        transform: translate(50%, 0%) rotate(0deg);
+    }
+    50%{
+        transform: translate(50%, 50%) rotate(180deg);
+    }
+    100%{
+        transform: translate(50%, 0%) rotate(0deg);
+    }
+}
+
+.shadow{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(84, 81, 81, 0.367);
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    animation: shadow 2s linear infinite;
+    position: static;
+}
+
+@keyframes shadow {
+    0%{
+        width: 50px;
+        height: 10px;
+    }
+    50%{
+        width: 100px;
+        height: 30px;
+    }
+    100%{
+        width: 50px;
+        height: 10px;
+    }
+}

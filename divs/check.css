@@ -1,0 +1,40 @@
+.container {
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .container input {
+    position: absolute;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  .container input:checked ~ .checkmark {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    height: 2em;
+    width: .7em;
+    border-color: #32cd32;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+  }
+  
+  .container .checkmark {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 2px solid #32cd32;
+    border-radius: 4px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  
+  
+  
